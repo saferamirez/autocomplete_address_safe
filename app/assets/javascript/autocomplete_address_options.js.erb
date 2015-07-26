@@ -1,0 +1,15 @@
+
+var __AutocompleteAddress ={
+  options: {
+    lat: <%= Rails.application.config.autocomplete_address_safe.lat %>,
+    long: <%= Rails.application.config.autocomplete_address_safe.long %>,
+    locality: <%= Rails.application.config.autocomplete_address_safe.locality %>,
+    country: <%= Rails.application.config.autocomplete_address_safe.country %>,
+    administrative_area_level_1: <%= Rails.application.config.autocomplete_address_safe.administrative_area_level_1 %>,
+    route: <%= Rails.application.config.autocomplete_address_safe.route %>,
+    street_number: <%= Rails.application.config.autocomplete_address_safe.street_number %>,
+    postal_code: <%= Rails.application.config.autocomplete_address_safe.postal_code %>
+    //lat: {"<%= Rails.application.config.autocomplete_address_safe.lat %>"}
+  }
+
+}
