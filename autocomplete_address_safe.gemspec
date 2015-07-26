@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Sirve para encontrar una ubicacion usando googlemaps}
   spec.description   = %q{Se usa para encontrar ubicaciones }
-  spec.homepage      = "http://codeplayers.com"
+  spec.homepage      = "https://github.com/saferamirez/autocomplete_address_safe"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
