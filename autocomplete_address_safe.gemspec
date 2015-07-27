@@ -9,12 +9,12 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Saul Felipe Ramirez"]
   spec.email         = ["safe.ramirez@gmail.com"]
 
-  spec.summary       = %q{Sirve para encontrar una ubicacion usando googlemaps}
-  spec.description   = %q{Se usa para encontrar ubicaciones }
+  spec.summary       = %q{Use to get address, city, country, and geolocalization }
+  spec.description   = %q{Use to get address, city, country, and geolocalization }
   spec.homepage      = "https://github.com/saferamirez/autocomplete_address_safe"
   spec.license       = "MIT"
 
-  
+
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
