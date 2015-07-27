@@ -24,10 +24,10 @@ Or install it yourself as:
 
 The first step add next code in "app/assets/javascripts/application.js"
 
-//= require autocomplete_safe
+    //= require autocomplete_safe
 
 The second step add in your view 
-<%= field_complete %>
+    <%= field_complete %>
 
 And add other input id's (lat, long, locality, country, administrative_area_level_1, route, street_number, postal_code)
 
