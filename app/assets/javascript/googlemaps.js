@@ -1,5 +1,6 @@
 // This example displays an address form, using the autocomplete feature
 // of the Google Places API to help users fill in the information.
+document.write('<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>');
 
 var placeSearch, autocomplete;
 var componentForm = {
