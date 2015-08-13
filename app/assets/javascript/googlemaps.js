@@ -32,15 +32,14 @@ function fillInAddress() {
     document.getElementById(component).value = '';
     document.getElementById(component).disabled = false;
   }*/
-
-  console.log(__AutocompleteAddress.options);
-
-
+  console.log(place);
+  console.log(place.geometry.location.lat());
+  console.log(place.geometry.location.lng());
    //Get each component of the address from the place details
    //and fill the corresponding field on the form.
   for (var i = 0; i < place.address_components.length; i++) {
     var addressType = place.address_components[i].types[0];
-    console.log(addressType +"=> " + __AutocompleteAddress.options[addressType])
+
     if(__AutocompleteAddress.options[addressType]){
       console.log("entro -> "+ addressType);
       if (componentForm[addressType]) {
@@ -49,9 +48,9 @@ function fillInAddress() {
       }
   }
   }
-  console.log(__AutocompleteAddress.options)
-  document.getElementById('lat').value = place.geometry.location.A;
-  document.getElementById('long').value = place.geometry.location.F;
+
+  document.getElementById('lat').value = place.geometry.location.lat();
+  document.getElementById('long').value = place.geometry.location.lng();
 }
 
 // Bias the autocomplete object to the user's geographical location,
